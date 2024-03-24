@@ -98,8 +98,7 @@ def main():
     # Loop through the pages
     page_num = 1
     while True:
-        url = f'https://www.visidarbi.lv/'
-        # url = f'https://www.visidarbi.lv/darba-sludinajumi?page={page_num}#results'
+        url = f'https://www.visidarbi.lv/darba-sludinajumi?page={page_num}#results'
         response = requests.get(url)
         if response.status_code == 200:
             scrape_and_store(url)  # Pass the dynamically generated URL
